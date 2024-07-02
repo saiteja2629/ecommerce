@@ -6,7 +6,7 @@
 
 @media screen and (min-width: 992px) {
   .app-container {
-    background-color:rgb(173, 187, 146);
+    background-color:rgb(175, 187, 146);
     width: 100%;
     min-height: 100vh;
     display: flex;
