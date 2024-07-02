@@ -75,6 +75,7 @@ const productSlice = createSlice({
     paymentTOPay: (state, action)=>{
  const paymentOrdersData= state.ordersData.find((p)=>p.id === action.payload)
    state.paymentData(...paymentOrdersData)
+  
 
     }
   },

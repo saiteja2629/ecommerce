@@ -16,7 +16,9 @@ dispatch(removeItemFromCart(id))
   return (
     <>
       <HomePage />
-      <ul className="products-container">
+      {
+        cartsData.length< 0 ? <p>No items in cart</p> :
+        <ul className="products-container">
         {cartsData.map((each) => (
           <li className="cart-item" key={each.id}>
             <img
@@ -38,6 +40,8 @@ dispatch(removeItemFromCart(id))
           </li>
         ))}
       </ul>
+      }
+    
     </>
   );
 };

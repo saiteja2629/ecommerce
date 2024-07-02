@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import HomePage from "./HomePage";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProductsData } from "../redux/ProductSlice";
-import {addItemToCart, addItemToWishList} from "../redux/ProductSlice"
+import {addItemToCart} from "../redux/ProductSlice"
 import ProductItem from "./ProductItem";
 
 export const Products = () => {
